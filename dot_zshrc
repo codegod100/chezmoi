@@ -1,0 +1,37 @@
+export PATH="$HOME/.local/bin:$PATH"
+# Turso
+export PATH="$PATH:/home/v/.turso"
+
+# mise
+eval "$(mise activate zsh)"
+
+# # starship
+eval "$(starship init zsh --print-full-init)"
+
+# zed
+export PATH="/home/v/Downloads/zed-preview.app/bin:$PATH"
+
+# windsurf
+export PATH="/home/v/Downloads/Windsurf/bin:$PATH"
+
+# direnv
+eval "$(direnv hook zsh)"
+
+# atuin
+eval "$(atuin init zsh --disable-up-arrow)"
+
+# brew
+if [ -e /home/linuxbrew/.linuxbrew/bin/brew ]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
+eval "$(zoxide init zsh)"
+
+export LS_COLORS="$(vivid generate molokai)"
+
+# aliases
+alias ww=whereis
+alias query="dnf repoquery -l"
+alias kkate="distrobox-host-exec kate"
+alias ls="eza"
+alias rm="trash"
