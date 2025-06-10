@@ -1,0 +1,43 @@
+[settings]
+experimental = true
+
+[env]
+
+[env._]
+file = ".env.json"
+
+[tools]
+age = "latest"
+aqua = "latest"
+bat = "latest"
+btop = "latest"
+bun = "latest"
+cargo-binstall = "latest"
+"cargo:atuin" = "latest"
+"cargo:eza" = "latest"
+"cargo:fd-find" = "latest"
+"cargo:starship-jj" = "latest"
+"cargo:vivid" = "latest"
+"cargo:zoxide" = "latest"
+chezmoi = "latest"
+direnv = "latest"
+duf = "latest"
+fzf = "latest"
+gh = "latest"
+glow = "latest"
+go = "latest"
+java = "latest"
+jj = "latest"
+lsd = "latest"
+node = "latest"
+pipx = "latest"
+"pipx:trash-cli" = "latest"
+pixi = "latest"
+pnpm = "10.10"
+rust = "nightly"
+sops = "latest"
+starship = "latest"
+uv = "latest"
+vivid = "latest"
+yazi = "latest"
+zig = "latest"
