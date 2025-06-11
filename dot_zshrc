@@ -1,4 +1,4 @@
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.pixi/bin:$PATH"
 # Turso
 export PATH="$PATH:/home/v/.turso"
 
