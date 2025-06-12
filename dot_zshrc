@@ -8,9 +8,6 @@ eval "$(mise activate zsh)"
 # # starship
 eval "$(starship init zsh --print-full-init)"
 
-# zed
-export PATH="/home/v/Downloads/zed-preview.app/bin:$PATH"
-
 # direnv
 eval "$(direnv hook zsh)"
 
