@@ -2,6 +2,7 @@
 experimental = true
 
 [env]
+MISE_NPM_BUN = true
 
 [env._]
 file = ".env.json"
@@ -32,6 +33,7 @@ java = "latest"
 jj = "latest"
 lsd = "latest"
 node = "24"
+"npm:@anthropic-ai/claude-code" = "latest"
 "npm:oclif" = "latest"
 "npm:porffor" = "latest"
 pipx = "latest"
@@ -42,6 +44,7 @@ rust = "nightly"
 sops = "latest"
 starship = "latest"
 ubi = "latest"
+"ubi:abishekvashok/cmatrix" = "latest"
 uv = "latest"
 vivid = "latest"
 wasmtime = "latest"
