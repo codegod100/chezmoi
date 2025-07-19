@@ -1,6 +1,9 @@
 export PATH="$HOME/.local/bin:$HOME/.pixi/bin:$PATH"
 # Turso
 export PATH="$PATH:/home/v/.turso"
+export PATH="/var/home/v/.bun/bin:$PATH"
+export PATH="$PATH:/home/v/proj/roc_nightly-linux_x86_64-2025-03-22-c47a8e9"
+
 
 # mise
 eval "$(mise activate zsh)"
@@ -33,3 +36,7 @@ alias chez="chezmoi"
 alias edit="chezmoi edit --apply"
 alias editconfig="edit ~/.zshrc && source ~/.zshrc"
 alias wi="windsurf-next"
+
+# opencode
+export PATH=/home/v/.opencode/bin:$PATH
+export PATH="/home/linuxbrew/.linuxbrew/opt/binutils/bin:$PATH"
