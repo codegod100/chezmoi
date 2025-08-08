@@ -40,3 +40,27 @@ alias wi="windsurf-next"
 # opencode
 export PATH=/home/v/.opencode/bin:$PATH
 export PATH="/home/linuxbrew/.linuxbrew/opt/binutils/bin:$PATH"
+
+# Set terminal title dynamically
+# -----------------------------
+
+# Function to print the escape sequence for setting the title
+# \e]0; is the command to set the title
+# ${1} is the title text we pass to the function
+# \a is the "bell" character which terminates the sequence
+set_term_title() {
+  print -Pn "\e]0;${1}\a"
+}
+
+# Runs BEFORE a command is executed
+preexec() {
+  # Sets the title to the first word of the command (e.g., "git" from "git status")
+  set_term_title "${1%% *}"
+}
+
+# Runs BEFORE the prompt is displayed (i.e., after a command finishes)
+precmd() {
+  # Sets the title back to show the current directory (e.g., "zsh: ~/Projects")
+  # You can customize what it says here!
+  set_term_title "zsh: %~"
+}

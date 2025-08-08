@@ -1,6 +1,1 @@
-- don't use git commands
-- don't run npm commands
-- make an effort not to create reactive loops
-- i use jj not git to manage files
-- explain why you're updating on edits
-- don't use jj resolve, figure out a merge strategy on your own
+- write git commits without mentioning claude
